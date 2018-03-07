@@ -1,7 +1,7 @@
 //
 // ViewController.m
 //
-// Copyright (c) 2013-2017 Vincent Tourraine (http://www.vtourraine.net)
+// Copyright (c) 2013-2018 Vincent Tourraine (http://www.vtourraine.net)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -27,8 +27,20 @@
 
 @implementation ViewController
 
-- (IBAction)pushAckViewController:(id)sender {
+- (IBAction)pushAckViewControllerWithDefaultFileName:(id)sender {
+    VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (IBAction)pushAckViewControllerWithExplicitFileName:(id)sender {
     VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithFileNamed:@"Pods-VTAck App-acknowledgements"];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (IBAction)pushAckViewControllerWithHardcodedData:(id)sender {
+    VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
+    VTAcknowledgement *ack = [[VTAcknowledgement alloc] initWithTitle:@"Test Title" text:@"Test content..." license:nil];
+    viewController.acknowledgements = @[ack];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

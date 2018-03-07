@@ -1,9 +1,29 @@
 # Changelog
 
+## 1.4 (25 January 2018)
+
+- Update `VTAcknowledgementsViewController` default `acknowledgementsViewController` initializer with plist file name based on bundle name (`Pods-#BUNDLE-NAME#-acknowledgements.plist`)
+- Update deployment target to iOS 8.0
+- Fix “Semantic Issue” warnings about API availability
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.3...1.4)
+
+
+## 1.3 (15 September 2017)
+
+- Support “readable content guide” on `VTAcknowledgementViewController`
+- Fix iPhone X layout
+- Update `VTAcknowledgement` public interface to explicitly mark `init` method as unavailable
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.2.1...1.3)
+
+
 ## 1.2.1 (30 January 2017)
 
 - Improve bundle handling for dynamic frameworks, by Maximilian Landsmann (@landsi)
 - Improve umbrella header for better Swift support, by Marcus Kida (@kimar)
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.2...1.2.1)
 
 
 ## 1.2 (21 October 2016)
