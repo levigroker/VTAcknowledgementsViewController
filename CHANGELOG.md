@@ -1,5 +1,28 @@
 # Changelog
 
+## 1.5.1 (4 December 2018)
+
+- Improve Dynamic Type support, by @kiancheong
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.5...1.5.1)
+
+
+## 1.5 (18 September 2018)
+
+- Filter out manual line wrapping from licenses text
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.4.1...1.5)
+
+
+## 1.4.1 (25 June 2018)
+
+- Fix text view inset on `VTAcknowledgementViewController` (support layout margins, safe area insets)
+- Update deprecated method
+- Remove support for “readable content guide” on `VTAcknowledgementViewController`
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.4...1.4.1)
+
+
 ## 1.4 (25 January 2018)
 
 - Update `VTAcknowledgementsViewController` default `acknowledgementsViewController` initializer with plist file name based on bundle name (`Pods-#BUNDLE-NAME#-acknowledgements.plist`)
