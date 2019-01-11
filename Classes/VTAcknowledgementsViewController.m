@@ -372,7 +372,7 @@ static const CGFloat VTFooterBottomMargin = 20;
     VTAcknowledgement *acknowledgement = self.acknowledgements[indexPath.row];
     VTAcknowledgementViewController *viewController = [[VTAcknowledgementViewController alloc] initWithTitle:acknowledgement.title text:acknowledgement.text];
 	[viewController view]; //Force the view to load (viewController.textView is loaded)
-	viewController.textView.backgroundColor = self.backgroundColor;
+	viewController.backgroundColor = self.backgroundColor;
 	viewController.textView.textColor = self.textColor;
 
     [self.navigationController pushViewController:viewController animated:YES];

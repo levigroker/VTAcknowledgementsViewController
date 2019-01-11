@@ -36,6 +36,11 @@
 @property (nonatomic, weak, nullable) UITextView *textView;
 
 /**
+ The background color to be used by the view.
+ */
+@property (nonatomic, strong, nullable) IBInspectable UIColor *backgroundColor;
+
+/**
  Initializes an acknowledgement view controller with a title and a body text.
 
  @param title The acknowledgement title.

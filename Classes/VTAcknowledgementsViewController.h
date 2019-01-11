@@ -66,7 +66,7 @@
 @property (nonatomic, strong, nullable) IBInspectable UIColor *textColor;
 
 /**
- The background color to be used by the acknowledgements table and acknowledgements detail text view.
+ The background color to be used by the acknowledgements table and acknowledgements detail view.
  */
 @property (nonatomic, strong, nullable) IBInspectable UIColor *backgroundColor;
 

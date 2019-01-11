@@ -68,7 +68,8 @@ const CGFloat VTLeftRightDefaultMargin = 10;
     textView.panGestureRecognizer.allowedTouchTypes = @[@(UITouchTypeIndirect)];
 #endif
     textView.textContainerInset = UIEdgeInsetsMake(VTTopBottomDefaultMargin, VTLeftRightDefaultMargin, VTTopBottomDefaultMargin, VTLeftRightDefaultMargin);
-    self.view.backgroundColor = [UIColor whiteColor];
+	self.textView.backgroundColor = self.backgroundColor;
+	self.view.backgroundColor = self.backgroundColor;
     [self.view addSubview:textView];
 
     self.textView = textView;
@@ -95,6 +96,15 @@ const CGFloat VTLeftRightDefaultMargin = 10;
 
 - (UIView *)preferredFocusedView {
     return self.textView;
+}
+
+- (void)setBackgroundColor:(UIColor *)backgroundColor
+{
+	_backgroundColor = backgroundColor;
+	if (self.viewLoaded) {
+		self.view.backgroundColor = backgroundColor;
+		self.textView.backgroundColor = backgroundColor;
+	}
 }
 
 @end
